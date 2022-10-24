@@ -24,6 +24,7 @@ public class Bulletcontroller : MonoBehaviour
         {
             collision.gameObject.GetComponent<AsteroideControler>().Muerte();
             Destroy(gameObject);
+            GameManager.instance.puntuacion += 100;
         }
     }
 }

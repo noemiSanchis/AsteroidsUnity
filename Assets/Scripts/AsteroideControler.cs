@@ -7,7 +7,7 @@ public class AsteroideControler : MonoBehaviour
     public float speed_min;
     public float speed_max;
     Rigidbody2D rb;
-    public Asteroidmanager manager; 
+    public Asteroidmanager manager;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,7 +48,7 @@ public class AsteroideControler : MonoBehaviour
         if (collision.tag == "Player")
         {
             collision.gameObject.GetComponent<MovimientoPersonaje>().Muerte();
-         
+
         }
 
     }
