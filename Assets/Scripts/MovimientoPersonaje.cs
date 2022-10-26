@@ -18,7 +18,7 @@ public class MovimientoPersonaje : MonoBehaviour
     public GameObject bala;
     public GameObject boquilla;
     public GameObject ParticulasMuerte;
-// Start is called before the first frame update
+
 void Start()
     {
         rb = GetComponent<Rigidbody2D>();
