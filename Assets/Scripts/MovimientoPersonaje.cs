@@ -83,17 +83,18 @@ void Start()
 
         }
 
+        /* Invencible*/
 
         IEnumerator Respawn_Coroutine()
         {
             collider.enabled = false;
             sprite.enabled = false;
             yield return new WaitForSeconds(2);
-            collider.enabled = true;
             sprite.enabled = true;
             transform.position = new Vector3(0, 0, 0);
             rb.velocity = new Vector2(0, 0);
-
+            yield return new WaitForSeconds(2);
+            collider.enabled = true;
         }
 
 
